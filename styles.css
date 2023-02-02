@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Roboto+Mono&display=swap');
+
+:root {
+    /* COLORS */
+    --black: #0E121B;
+    --darkpurple: #1a1f29;
+    --blue: #7176ff;
+    --pink: #FFB5C2;
+    --yellow: #EAFFDA;
+    /* FONTS */
+    --main-font: 'Poppins', sans-serif;
+    --link-font: 'Roboto Mono', monospace;
+}
+
+/* GLOBAL */
+body {
+    background-color: var(--black);
+    color: var(--yellow);
+    font-family: var(--main-font);
+    text-align: center;
+    margin: 1rem;
+}
+header, main, footer {
+    padding: 2rem;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--pink);
+    font-family: var(--link-font);
+    cursor: pointer;
+}
+
+/* MAIN */
+main {
+    background-color: var(--darkpurple);
+    border-radius: 10px;
+    margin: 5rem;
+}
+main h2 {
+    color: var(--blue);
+}
+
