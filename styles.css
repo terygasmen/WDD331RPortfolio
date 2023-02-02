@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Roboto+Mono:wght@400;700&display=swap');
 
 :root {
     /* COLORS */
@@ -38,8 +38,81 @@ main {
     background-color: var(--darkpurple);
     border-radius: 10px;
     margin: 5rem;
+    text-align: justify;
 }
-main h2 {
-    color: var(--blue);
+main h3 {
+    text-align: center;
+    padding: 2rem 0;
+}
+main div {
+    padding-bottom: 1rem;
+}
+main div h4 {
+    background-color: var(--blue);
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    padding: 1rem;
+    font-size: 1.8rem;
 }
 
+/* W01 - W04 */
+.explanation h4 {
+    margin: 1rem 0;
+}
+.explanation section p {
+    padding-bottom: 1rem;
+}
+#scroll-container {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--pink);
+    padding: 2rem 0;
+  }
+  
+  #scroll-text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: var(--link-font);
+    font-weight: 700;
+    color: var(--blue);
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+  
+/* Large Views */
+@media only screen and (min-width: 801px) {
+    main {
+        margin: 2rem 10rem;
+    }
+}
