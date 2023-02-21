@@ -45,3 +45,14 @@ footer {
     font-size: 10px;
     justify-content: center;
 }
+
+@media only screen and (min-width: 600px) {
+    main {
+        display: flex;
+        justify-content: center;
+    }
+    .card {
+        width:35%;
+        height:30%;
+    }
+}
